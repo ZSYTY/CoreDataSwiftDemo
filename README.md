@@ -6,7 +6,7 @@
 
 本文则是介绍Swift中CoreData的基本使用。 
 
-![coredata.gif](http://upload-images.jianshu.io/upload_images/3873004-ad4f079ba055f7db.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![coredata.gif](https://github.com/remember17/CoreDataSwiftDemo/blob/master/img-folder/coredata.gif)  
 
 ## 目录
 > 一、 图形化创建模型   
