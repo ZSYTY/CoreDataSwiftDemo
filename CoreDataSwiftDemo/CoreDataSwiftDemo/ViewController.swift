@@ -1,10 +1,10 @@
 //
 //  ViewController.swift
 //  CoreDataSwiftDemo
-//
+//  https://www.jianshu.com/p/e4c106015005
 //  Created by 吴浩 on 2018/1/26.
 //  Copyright © 2018年 wuhao. All rights reserved.
-//
+//  https://github.com/remember17/CoreDataSwiftDemo
 
 import UIKit
 
@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     }()
 }
 
-
 // MARK: - 按钮点击
 extension ViewController {
     
@@ -45,12 +44,14 @@ extension ViewController {
         guard let nameString = nameTextField.text else { return }
         guard let ageString = ageTextField.text else { return }
         guard let age = Int16(ageString) else { return }
+        // 保存数据
         CoreDataManager.shared.savePersonWith(name: nameString, age: age)
     }
     
     // 刷新列表
     @IBAction func reloadData(_ sender: UIButton) {
         resignKeyboard()
+        // 获取数据
         dataArray = CoreDataManager.shared.getAllPerson()
         tableView.reloadData()
     }

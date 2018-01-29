@@ -1,10 +1,10 @@
 //
 //  CoreDataManager.swift
 //  CoreDataSwiftDemo
-//
+//  https://www.jianshu.com/p/e4c106015005
 //  Created by 吴浩 on 2018/1/26.
 //  Copyright © 2018年 wuhao. All rights reserved.
-//
+//  https://github.com/remember17/CoreDataSwiftDemo
 
 import UIKit
 import CoreData
@@ -14,6 +14,7 @@ class CoreDataManager: NSObject {
     // 单例
     static let shared = CoreDataManager()
     
+    // 拿到AppDelegate中创建好了的NSManagedObjectContext
     lazy var context: NSManagedObjectContext = {
         let context = ((UIApplication.shared.delegate) as! AppDelegate).context
         return context
